@@ -53,10 +53,12 @@ In questa sezione sono elencati i prerequisiti software necessari all'esecuzione
 <div style="page-break-before: always;"></div>
 
 ## Utilizzo
-Per eseguire il programma, dopo aver clonato il repository, è sufficiente avviare il file `main.py`:
-```
-python main.py
-```
+Per eseguire il programma, dopo aver clonato il repository, è necessario:
+1.  decomprimere il dataset presente nella cartella `AzureFunctionsInvocationTrace`;
+2.  avviare il file `main.py`:
+    ```
+    python main.py
+    ```
 
 ## Codice e analisi
 In questa sezione vengono mostrate le parti principali del codice e analizzati i risultati emersi.
