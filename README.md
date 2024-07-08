@@ -54,7 +54,7 @@ In questa sezione sono elencati i prerequisiti software necessari all'esecuzione
 
 ## Utilizzo
 Per eseguire il programma, dopo aver clonato il repository, è necessario:
-1.  decomprimere il dataset presente nella cartella `AzureFunctionsInvocationTrace`;
+1.  decomprimere il dataset presente nella cartella `AzureFunctionsInvocationTrace\dataset`;
 2.  avviare il file `main.py`:
     ```
     python main.py
