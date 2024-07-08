@@ -170,8 +170,8 @@ plt.tight_layout()
 plt.show()
 
 
-# Visualizzazione della relazione tra durata media e numero di funzioni
-app_duration = data.groupby('app')['duration'].mean().reset_index() # Calcolo della durata media delle invocazioni per applicazione
+# relationship between average duration and number of functions
+app_duration = data.groupby('app')['duration'].mean().reset_index() 
 app_analysis = pd.merge(app_duration, functions_per_app, on='app')
 print(app_analysis)
 
@@ -184,8 +184,7 @@ plt.show()
 correlation = app_analysis['duration'].corr(app_analysis['num_functions'])
 print(f'Correlation between average duration and number of functions: {correlation:.4f}')
 
-#Analisi della durate delle invocazioni per ogni applicazione
-
+#Analysis of invocation durations for each functions
 average_duration_per_function = data.groupby(['app', 'func'])['duration'].mean().reset_index()
 
 plt.scatter(average_duration_per_function['app'], average_duration_per_function['duration'], color='blue', alpha=0.7)
@@ -238,11 +237,10 @@ def select_application():
     def show_graph():
         selected_app = app_combobox.get()
         visualizza_pattern(selected_app)
-    # Main window
+
     root = tk.Tk()
     root.title("Select an application")
     root.geometry("800x600")
-    # Frame principale
     root.geometry('800x600')
     app_names = data[data['num_functions'] > 1]['app'].unique()
     app_combobox = ttk.Combobox(root, values=list(app_names), width=50)
