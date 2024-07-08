@@ -255,11 +255,3 @@ def select_application():
 
 # Start GUI
 select_application()
-
-'''
-Le funzioni all'interno di un'applicazione possono essere progettate per lavorare insieme in modo collaborativo. 
-Ciò potrebbe implicare che alcune funzioni debbano aspettare che altre completino il loro lavoro prima di poter procedere. 
-Questa dipendenza può aumentare la durata media complessiva delle funzioni all'interno dell'applicazione.
-In alcuni casi, l'avvio e la conclusione di un gruppo di funzioni possono richiedere più tempo rispetto all'esecuzione di singole funzioni.
-Se un'applicazione avvia un gruppo di funzioni contemporaneamente, potrebbe esserci un aumento della durata media delle funzioni dovuto a questo overhead.
-'''
